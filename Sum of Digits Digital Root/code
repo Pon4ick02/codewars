@@ -1,0 +1,24 @@
+def digital_root(n):  # 12345
+    a = str(n)
+    b = len(a)
+    k = 0
+    o = 0
+    sem = 0
+    while k < b:
+        sem = sem + int(a[o])
+        o = o + 1
+        k = k + 1
+    g = str(sem)
+
+    while len(g) > 1:
+        k = 0
+        b = len(g)
+        sem = 0
+        o = 0
+        while k < b:
+            sem = sem + int(g[o])
+            o = o + 1
+            k = k + 1
+        print(sem)
+        g = str(sem)
+    return sem
