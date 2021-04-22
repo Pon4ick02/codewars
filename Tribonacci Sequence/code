@@ -1,0 +1,29 @@
+def tribonacci(signature, n):
+    print(signature,n)
+    k = len(signature) + 1
+    a = 0
+    b = 1
+    c = 2
+    res = []
+    if n == 0:
+        return res
+    elif n == 1:
+        res.append(signature[a])
+        return res
+    elif n == 2:
+        res.append(signature[a])
+        res.append(signature[b])
+        return res
+        
+    else:
+        res.append(signature[a])
+        res.append(signature[b])
+        res.append(signature[c])
+        while k <= n:
+            j = res[a] + res[b] + res[c]
+            res.append(j)
+            a = a + 1
+            b = b + 1
+            c = c + 1
+            k = k + 1
+    return res
