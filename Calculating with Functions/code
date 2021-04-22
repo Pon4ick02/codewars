@@ -1,0 +1,424 @@
+#The worst my code
+a = 0
+b = 0
+r = 0
+z = 0
+
+def zero(x=None):  # your code here
+    global a
+    global b
+    global r
+    global z
+    z = 1
+    if a == 0 and b == 0:
+        a = 0
+    elif b == 0 and a != 0:
+        b = 0
+    if r == 1:
+        t = a + b
+        a = 0
+        b = 0
+        r = 0
+        z = 0 
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        b = 0
+        r = 0
+        z = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+
+
+def one(x=None):  # your code here
+    global a
+    global b
+    global r
+    global z
+    if a == 0 and b == 0 and z == 0:
+        a = 1
+    elif (b == 0 and a != 0) or z == 1:
+        b = 1
+    if r == 1:
+        t = a + b
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+
+
+def two(x=None):  # your code here
+    global a
+    global b
+    global r
+    global z
+    if a == 0 and b == 0 and z == 0:
+        a = 2
+    elif (b == 0 and a != 0) or z == 1:
+        b = 2
+    if r == 1:
+        t = a + b
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+
+
+def three(x=None):  # your code here
+    global a
+    global b
+    global z
+    global r
+    if a == 0 and b == 0 and z == 0:
+        a = 3
+    elif (b == 0 and a != 0) or z == 1:
+        b = 3
+    if r == 1:
+        t = a + b
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        b = 0
+        r = 0
+        z = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        b = 0
+        r = 0
+        z = 0
+        return t
+
+
+def four(x=None):  # your code here
+    global a
+    global b
+    global r
+    global z
+    if a == 0 and b == 0 and z == 0:
+        a = 4
+    elif (b == 0 and a != 0) or z == 1:
+        b = 4
+    if r == 1:
+        t = a + b
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+
+
+def five(x=None):  # your code here
+    global a
+    global b
+    global z
+    global r
+    if a == 0 and b == 0 and z == 0:
+        a = 5
+    elif (b == 0 and a != 0) or z == 1:
+        b = 5
+    if r == 1:
+        t = a + b
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+
+
+def six(x=None):  # your code here
+    global a
+    global b
+    global z
+    global r
+    if a == 0 and b == 0 and z == 0:
+        a = 6
+    elif (b == 0 and a != 0) or z == 1:
+        b = 6
+    if r == 1:
+        t = a + b
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+
+
+def seven(x=None):  # your code here
+    global a
+    global b
+    global r
+    global z
+    if a == 0 and b == 0 and z == 0:
+        a = 7
+    elif (b == 0 and a != 0) or z == 1:
+        b = 7
+    if r == 1:
+        t = a + b
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+
+
+def eight(x=None):  # your code here
+    global a
+    global b
+    global r
+    global z
+    if a == 0 and b == 0 and z == 0:
+        a = 8
+    elif (b == 0 and a != 0) or z == 1:
+        b = 8
+    if r == 1:
+        t = a + b
+        a = 0
+        z = 0
+        b = 0
+        r = 0
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+
+
+def nine(x=None):  # your code here
+    global a
+    global b
+    global r
+    global z
+    if a == 0 and b == 0 and z == 0:
+        a = 9
+    elif (b == 0 and a != 0) or z == 1:
+        b = 9
+    if r == 1:
+        t = a + b
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 2:
+        t = b - a
+        a = 0
+        b = 0
+        r = 0
+        z = 0
+        return t
+    if r == 3:
+        t = b * a
+        a = 0
+        b = 0
+        z = 0
+        r = 0
+        return t
+    if r == 4:
+        t = b // a
+        a = 0
+        b = 0
+        r = 0
+        z = 0
+        z = 0
+        return t
+
+
+def plus(x=None):  # your code here
+    global a
+    global b
+    global r
+    r = 1
+
+
+def minus(x=None):  # your code here
+    global a
+    global b
+    global r
+    r = 2
+
+
+def times(x=None):  # your code here
+    global a
+    global b
+    global r
+    r = 3
+
+
+def divided_by(x=None):  # your code here
+    global a
+    global b
+    global r
+    r = 4
