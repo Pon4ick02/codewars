@@ -1,0 +1,2 @@
+# codewars
+simple codewars cods
