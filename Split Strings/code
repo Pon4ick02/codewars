@@ -1,0 +1,26 @@
+def solution(s):
+    b = len(s)
+    d = []
+    if b == 0:
+        return d
+    if b > 0:
+        if b % 2 == 0:
+            a = 0
+            q = 0
+            w = 1
+            while a < b:
+                d.append(s[q] + s[w])
+                q = q + 2
+                w = w + 2
+                a = a + 2
+        if b % 2 == 1:
+            a = 1
+            q = 0
+            w = 1
+            while a < b:
+                d.append(s[q] + s[w])
+                q = q + 2
+                w = w + 2
+                a = a + 2
+            d.append(s[b-1] + "_")
+    return d
