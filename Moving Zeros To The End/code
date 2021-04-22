@@ -1,0 +1,21 @@
+def move_zeros(array):
+    res = []
+    q = 0
+    w = 0
+    d = 0
+    r = 0
+    e = len(array)
+    while d <e:
+        if array[r] != 0:
+            res.append(array[r])
+        else:
+            q = q + 1
+        r =r + 1
+        d = d + 1
+    if q == 0:
+        return res
+    if q >= 1:
+        while w < q:
+            res.append(0)
+            w = w + 1
+    return res
