@@ -1,0 +1,11 @@
+def narcissistic(value):
+    k = value
+    a = len(str(value))
+    n = 0
+    res = 0
+    while n < a:
+        i = value % 10
+        res = res + (i ** a)
+        value = value // 10
+        n = n + 1
+    return res == k
