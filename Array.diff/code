@@ -5,3 +5,4 @@ def array_diff(a, b):
                 a.remove(i)
     return a
 print(hi)
+print(bye)
