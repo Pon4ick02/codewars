@@ -6,3 +6,10 @@ def array_diff(a, b):
     return a
 print(hi)
 print(bye)
+#второй вариант...
+def array_diff(a, b):
+    for r in b:
+        if r in a:
+            while r in a:
+                a.remove(r)
+    return a
